@@ -1,0 +1,105 @@
+doctype html
+html(lang='en')
+  head
+    title ZONA 
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+TAS:wght@100..400&family=Poly:ital@0;1&display=swap', rel='stylesheet')
+    // <script src="https://cdn.tailwindcss.com"></script>
+    link(rel='stylesheet', href='stylesheets/css.css')
+    link(rel='stylesheet', href='stylesheets/output.css')
+  body.bg-blend-normal.poly-regular
+    div(style=' background: linear-gradient(to bottom, blueviolet, white);')
+      .flex.flex-row.justify-between.items-center.h.p-3
+        .text-2xl.font-semibold Zona Invent
+        .flex.gap-2.justify-between
+          .font-normal About us
+          .font-normal Contact
+      .w-full
+        section.mx-auto.p-4.pt-16.t(class='w-11/12')
+          h1.text-center.text-3xl.font-black PRODUCT INVENTORY FOR BUSINESSES.
+          p.font-medium.pt-4.text-center.pb-3(style='text-align-last:center; font-size: 16px;')
+            | Welcome to zona inventory Your go-to solution for efficient inventory management. keep track of your assests seemlessly, optimize your supply chain, and make data-driven decisions with ease.
+        |  
+        .bh.b1.mx-auto.items-center.w-32.mt-11.rounded.justify-center.flex(style='background-color: rgb(9, 29, 29);')
+          button.p-3.text-white
+           a(href="http://localhost:3000/signup")  Sign up
+          svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewBox='0 -960 960 960', width='24px', fill='#E8EAED')
+            path(d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z')
+        |  
+        .bh.mx-auto.items-center.w-32.mt-2.hh.rounded.justify-center.flex(style='background-color: rgb(9, 29, 29);')
+          button.p-3.text-white 
+           a(href="http://localhost:3000/login")  Log in
+          svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewBox='0 -960 960 960', width='24px', fill='#E8EAED')
+            path(d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z')
+      div
+      .fixed.bottom-11.right-1.inline-block.p-1.rounded-md(style='background-color: rgb(9, 29, 29);')
+        svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewBox='0 -960 960 960', width='24px', fill='#e8eaed')
+          path(d='M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z')
+      .p-6.flex-col.flex.mt-10.rounded-2xl.mx-auto.w-full
+        .mx-auto.text-5xl.font-extrabold.text-center.opacity-0.mt-5.mb-5.check.max-w-lg(style='text-align-last: center; color:black;', class='w-10/12') Track assests available in your inventory
+        .w-full.mx-auto.mt-6(class='sm:max-w-sm md:max-w-md')
+          img.w-full.h-auto.rounded-xl.check.opacity-0(src='images/graph.jpg', alt='')
+        .grid-cols-2(class='sm:inline-grid md:inline-grid lg:grid-cols-3')
+          .mt-14.mx-auto.text-2xl.font-extrabold.text-center.opacity-0.check(style='text-align-last: center; color:black;', class='w-10/12')
+            h1.underline INCREASE SALES.
+            p.mt-3.mx-auto.text-xl.font-normal.text-center.mb-5(style='text-align-last: center; color:black;')
+              | Expand your business online with our multi-channel inventory management system. Set up and integrate your Amazon, eBay, Etsy, or Shopify account, and start selling your merchandise.
+              | Learn More
+          .mt-14.mx-auto.text-2xl.font-extrabold.text-center.opacity-0.check(style='text-align-last: center; color:black;', class='w-10/12')
+            h1.underline MANAGE ORDER.
+            p.mt-3.mx-auto.text-xl.font-normal.text-center.mb-5(style='text-align-last: center; color:black;')
+              | Manage your offline and online orders with our efficient order management system. Also, you can create purchase orders, backorders and drop shipments, all in a single inventory management application.
+              | Learn More
+          .mt-14.mx-auto.text-2xl.font-extrabold.text-center.opacity-0.check(style='text-align-last: center; color:black;', class='w-10/12')
+            h1.underline TRACKING.
+            p.mt-3.mx-auto.text-xl.font-normal.text-center.mb-5(style='text-align-last: center; color:black;', class='w-10/12')
+              | Track every item or batch in your inventory with serial number and batch tracking feature. This way, you can either always keep a track on the movement of the items or have better control over the expiry of each batch.
+          .mt-14.mx-auto.text-2xl.font-extrabold.text-center.opacity-0.check(style='text-align-last: center; color:black;', class='w-10/12')
+            h1.underline SHIPPING.
+            p.mt-3.mx-auto.text-xl.font-normal.text-center.mb-5(style='text-align-last: center; color:black;', class='w-10/12')
+              | Get real-time shipping rates and in-transit details of major shipping carriers and choose a shipping partner for your business, wisely. A much-needed feature for a complete inventory management system.
+          .mt-14.mx-auto.text-2xl.font-extrabold.text-center.opacity-0.check(style='text-align-last: center; color:black;', class='w-10/12')
+            h1.underline ACCOUNTING.
+            p.mt-3.mx-auto.text-xl.font-normal.text-center.mb-5(style='text-align-last: center; color:black;', class='w-10/12')
+              | Our seamless integration with Zoho CRM and Zoho Books automatically syncs all your contacts, orders and help you manage financial data without breaking a sweat.
+          .mt-14.mx-auto.text-2xl.font-extrabold.text-center.opacity-0.check(style='text-align-last: center; color:black;', class='w-10/12')
+            h1.underline WAREHOUSING.
+            p.mt-3.mx-auto.text-xl.font-normal.text-center.mb-5(style='text-align-last: center; color:black;', class='w-10/12')
+              | Check stock level, manage inter-warehouse transfer, and generate reports for specific warehouses within seconds. Warehouse inventory management, at your fingertips.
+              | Learn More
+      .bh.b1.mx-auto.items-center.w-32.mt-11.rounded.justify-center.flex(style='background-color: rgb(9, 29, 29);')
+        button.p-3.text-white
+         a(href="http://localhost:3000/signup")  Sign up
+        svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewBox='0 -960 960 960', width='24px', fill='#E8EAED')
+          path(d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z')
+      |  
+      .bh.mx-auto.items-center.w-32.mt-2.hh.rounded.justify-center.flex(style='background-color: rgb(9, 29, 29);')
+        button.p-3.text-white
+         a(href="http://localhost:3000/login")  Log in
+        svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewBox='0 -960 960 960', width='24px', fill='#E8EAED')
+          path(d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z')
+          
+      |  
+      .flex.mx-auto.mt-8.bg-gray-900.p-8.w-full
+        ul.mx-auto.flex.flex-col.gap-2.text-white
+          li.underline x-handle
+          li.underline instagram
+          li.underline whatsapp
+          li.underline thread
+          li.underline meta
+    script.
+      const ele= document.getElementsByClassName("check")
+      function vis(){
+      for(let a=0; a<ele.length; a++){
+      if( (ele.item(a).getBoundingClientRect().y)<=500 && !(ele.item(a).classList.contains("st")) ){
+      ele.item(a).classList.add("st");
+      ele.item(a).classList.remove("opacity-0")
+      }
+      }
+      }
+      window.addEventListener("scroll", vis)
