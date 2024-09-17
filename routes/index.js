@@ -142,9 +142,10 @@ res.redirect("/login")
 }
 else{
   console.log(result)
+  res.redirect("/signup")
 }
 
-res.redirect("/signup")
+
 })
 
 
