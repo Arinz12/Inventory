@@ -5,6 +5,7 @@ const { createc } = require('../serverfns/addc');
 const deluser = require('../serverfns/del');
 var router = express.Router();
 var path=require('path');
+const bcrypt=require("bcryptjs")
 var fs=require("fs");
 const session = require("express-session");
 const getuser = require('../serverfns/get');
@@ -30,7 +31,7 @@ passport.use(
         if (!user){
 return done(null,false,{message:"Username is incorrect"})
         }
-        const match= password== user.password
+        const match= bcrypt.compareSync(password,user.password)
         if(!match){
 return done(null,false,{message:"password is incorrect"})
         }

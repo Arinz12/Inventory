@@ -1,5 +1,6 @@
 require("dotenv").config()
 const mongoose=require("mongoose")
+const bcrypt= require("bcryptjs")
 mongoose.set("strictQuery", false)
  
 const itemSchema = new mongoose.Schema({
@@ -24,7 +25,7 @@ await mongoose.connect(process.env.DATABASEURL ,{
 
   const user=new User({
     name:a,
-    password:b,
+    password:bcrypt.hashSync(b,10) ,
     email:c,
     item:[]
 
