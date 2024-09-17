@@ -63,7 +63,7 @@ const allow=async (req,res,next)=>{
   if(req.isAuthenticated()){
     
   try {
-    console.log(req.session)
+    console.log("AUTH OK")
     const ob= req.user
   res.render("logged",{objs:ob.item,pd:process.env.PASSID,obj:ob})
   } catch (error) {
