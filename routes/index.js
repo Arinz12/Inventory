@@ -83,7 +83,7 @@ router.get("/login",(req,res)=>{
   res.send(fs.readFileSync(p,"utf8"))
 })
 router.get("/signup",(req,res)=>{
-  res.send(fs.readFileSync(p2,"utf8"))
+  res.render('sign')
 })
 router.post("/logg",passport.authenticate("local",{
 failureRedirect: "/login",
@@ -142,11 +142,29 @@ await createuser(aa,bb,cc).catch(()=>{console.log("SOMETHING WENT WRONG")})
 res.redirect("/login")
 }
 else{
-  console.log(result)
-  res.redirect("/signup")
+  //console.log(result.errors)
+  const arr=result.errors
+  //for name rerender
+const name1=arr.filter(a=>a.param=="name")[0]
+const nam=name1? name1.value:req.body.name
+const e1=name1? name1.msg:""
+
+  //for password rerender
+  const pass1=arr.filter(a=>a.param=="password")[0]
+  const pass=pass1? pass1.value: req.body.password
+  const e2=pass1? pass1.msg:""
+
+
+//for email rerender
+const email1=arr.filter(a=>a.param=="email")[0]
+const ema=email1? email1.value:req.body.email
+const e3=email1? email1.msg:""
+
+
+  res.render('sign',{valpass:pass,valname:nam,valemail:ema,mfn:e1,mfp:e2,mfe:e3})
+  
+
 }
-
-
 })
 
 
